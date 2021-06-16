@@ -1306,6 +1306,21 @@ dpdk_src_x86_64 = SrcGroup(dir='src/dpdk/',
                  'drivers/net/ena/base/ena_com.c',
                  'drivers/net/ena/base/ena_eth_com.c',
 
+                 #Netronome NFP
+                 'drivers/net/nfp/nfpcore/nfp_mutex.c',
+                 'drivers/net/nfp/nfpcore/nfp_nffw.c',
+                 'drivers/net/nfp/nfpcore/nfp_cppcore.c',
+                 'drivers/net/nfp/nfpcore/nfp_nsp_eth.c',
+                 'drivers/net/nfp/nfpcore/nfp_nsp.c',
+                 'drivers/net/nfp/nfpcore/nfp_cpp_pcie_ops.c',
+                 'drivers/net/nfp/nfpcore/nfp_nsp_cmds.c',
+                 'drivers/net/nfp/nfpcore/nfp_rtsym.c',
+                 'drivers/net/nfp/nfpcore/nfp_hwinfo.c',
+                 'drivers/net/nfp/nfpcore/nfp_mip.c',
+                 'drivers/net/nfp/nfpcore/nfp_resource.c',
+                 'drivers/net/nfp/nfpcore/nfp_crc.c',
+                 'drivers/net/nfp/nfp_net.c',
+
                  #libs
                  'lib/librte_eal/x86/rte_cpuflags.c',
                  'lib/librte_eal/x86/rte_spinlock.c',
