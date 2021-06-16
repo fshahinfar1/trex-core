@@ -25,7 +25,7 @@ class STLS1(object):
     Generalization of udp_1pkt_simple, can specify number of streams and packet length
     '''
     def create_stream (self, packet_len, stream_count):
-        base_pkt = Ether()/IP(src="16.0.0.1",dst="48.0.0.1")/UDP(dport=12,sport=1025)
+        base_pkt = Ether()/IP(src="10.10.1.2",dst="10.10.1.1")/UDP(dport=8000,sport=8000)
         base_pkt_len = len(base_pkt)
         base_pkt /= 'x' * max(0, packet_len - base_pkt_len)
         packets = []
